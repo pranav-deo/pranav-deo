@@ -394,7 +394,8 @@ mark,
 
 .img-fluid {
   max-width: 100%;
-  height: auto; }
+  height: auto; 
+}
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -3460,9 +3461,11 @@ input[type="button"].btn-block {
   margin-right: 1rem;
   font-size: 1.25rem;
   line-height: inherit;
+  transition: transform .4s;
   white-space: nowrap; }
   .navbar-brand:hover, .navbar-brand:focus {
-    text-decoration: none; }
+    text-decoration: none;
+    transform: scale(1.3); }
 
 .navbar-nav {
   display: -webkit-box;
@@ -8487,6 +8490,28 @@ h1, h2, h3, h4, h5,
     -ms-transform: rotate(45deg);
     transform: rotate(45deg); }
 
+.mouse-icon-white {
+  width: 70px;
+  height: 70px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  display: block; }
+  .mouse-icon-white:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background: #ffffff;
+    z-index: -1;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg); }
+
 .mouse-wheel {
   height: 70px;
   margin: 2px auto 0;
@@ -8501,7 +8526,7 @@ h1, h2, h3, h4, h5,
   -moz-animation: 1.6s ease infinite wheel-up-down;
   animation: 1.6s ease infinite wheel-up-down;
   color: #3e64ff;
-  font-size: 30px; }
+  font-size: 60px; }
 
 @-webkit-keyframes wheel-up-down {
   100% {
@@ -8805,14 +8830,21 @@ h1, h2, h3, h4, h5,
     color: #000000; }
 
 .ftco-partner {
-  padding: 4em 0 !important; }
+  padding: 4em 0 !important;
+  white-space: nowrap }
   .ftco-partner .partner {
     display: block;
     padding: 0 20px; }
-    @media (max-width: 991.98px) {
-      .ftco-partner .partner {
-        padding: 0 70px;
-        margin-bottom: 40px; } }
+  @media (max-width: 991.98px) {
+    .ftco-partner .partner {
+      padding: 0 70px;
+      margin-bottom: 40px; } }
+
+      .helper {
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
 
 .services-1 {
   margin-bottom: 40px;
@@ -9138,6 +9170,9 @@ textarea.form-control {
     .ftco-section {
       padding: 6em 0; } }
 
+.ftco-1-pt {
+  padding-top: 1em !important; }
+      
 .ftco-no-pt {
   padding-top: 0 !important; }
 

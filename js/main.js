@@ -282,6 +282,17 @@
 			
 			return false;
 		});
+
+		$('.mouse-icon-white').on('click', function(event){
+			
+			event.preventDefault();
+
+			$('html,body').animate({
+				scrollTop: $('.goto-here').offset().top - 100
+			}, 500, 'easeInOutExpo');
+			
+			return false;
+		});
 	};
 	goHere();
 
