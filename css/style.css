@@ -8787,6 +8787,19 @@ h1, h2, h3, h4, h5,
           transform: translateY(-50%);
           background: #3e64ff; }
 
+  @media screen and (max-width: 1024px) {
+      #my-content {
+          display: none;
+      }
+      /* show it elsewhere */
+  }
+  @media screen and (min-width: 1025px) {
+      #my-content {
+          display: block;
+      }
+      /* hide it on small screens */
+  }
+
 .page {
   width: 100%;
   margin-bottom: 7em; }
@@ -8837,14 +8850,25 @@ h1, h2, h3, h4, h5,
     padding: 0 20px; }
   @media (max-width: 991.98px) {
     .ftco-partner .partner {
-      padding: 0 70px;
+      padding: 0 20px;
       margin-bottom: 40px; } }
 
-      .helper {
-        display: inline-block;
-        height: 100%;
-        vertical-align: middle;
-    }
+.justify-content-shift{
+  -webkit-box-pack: end !important;
+  -ms-flex-pack: end !important;
+  justify-content: flex-end !important;
+  flex-wrap: nowrap; }
+  @media (max-width: 760px) {
+   .justify-content-shift {
+      -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+      justify-content: center !important; 
+      flex-wrap: nowrap;} }
+
+  .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;}
 
 .services-1 {
   margin-bottom: 40px;
