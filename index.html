@@ -50,7 +50,8 @@
                     <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
                     <!-- <li class="nav-item white_txt"><span>_________ </span></a></li> -->
                     <!-- <li><a href="resume.pdf" class="btn_top btn-primary py-3 px-3 align-items-end">Download CV</a></p></li> -->
-                    <li class="nav-item"><a href="resume.pdf" class="nav-link font-weight-bold"><span>Download
+                    <li class="nav-item"><a href="resume.pdf" target="_blank"
+                            class="nav-link font-weight-bold"><span>Download
                                 CV</span></a></li>
                 </ul>
             </div>
@@ -96,10 +97,10 @@
                         <img src="images/about.jpg" style="object-fit: cover; width: 100%; height: auto;">
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-6 pl-md-5 py-5">
+                <div class="col-md-6 col-lg-6 pl-md-5 pt-5">
                     <div class="row justify-content-start pb-3">
                         <div class="col-md-12 heading-section ftco-animate">
-                            <h1 class="big">About</h1>
+                            <!-- <h1 class="big">About</h1> -->
                             <h2 class="mb-4">About Me</h2>
                             <p> I'm currently a Robot Learning Research Engineer at <a
                                     href="https://www.honda.co.jp/robotics/ " target="_blank"> Honda robotics,
@@ -113,19 +114,22 @@
                                 Computer Vision. Moreover, I'm really excited about their application on real-world
                                 robots, unmanned vehiches
                                 and autonomous driving. </p>
-                            <!-- <p> I've completed my Bachelor's from <a href="http://www.iitb.ac.in/" target="_blank">
-                                    IIT Bombay </a> with major in Civil Engg. and two minor
-                                degrees in <a href="https://www.cse.iitb.ac.in/" target="_blank"> Computer Science
-                                </a> and <a href="https://www.minds.iitb.ac.in/" target="_blank"> Artificial
-                                    Intelligence & Data Science </a>.</p> -->
-                            <!-- <p> My learning experience includes courses in control systems, machine learning, computer
-                                vision, design of structures, relevant lab courses and hands - on projects. </p> -->
-
                         </div>
                     </div>
-                    <div class="counter-wrap ftco-animate d-flex mt-md-3">
-                        <div class="text">
-                            <p><a href="resume.pdf" class="btn btn-primary py-3 px-3">Download CV</a></p>
+                    <div class="ftco-animate">
+                        <p><a href="resume.pdf" target="_blank" class="btn btn-primary py-3 px-3">Download CV</a>
+                    </div>
+
+                    <div class="row justify-content-shift">
+                        <div class="ftco-animate">
+                            <a href="https://www.honda.co.jp/robotics/" target="_blank" class="partner helper"> <span
+                                    class="helper"></span><img src="images/honda-logo.webp" id="honda-logo"
+                                    alt="Honda R&D Logo"></a>
+                        </div>
+                        <div class="ftco-animate">
+                            <a href="https://www.iitb.ac.in/" target="_blank" class="partner helper"> <span
+                                    class="helper"></span><img src="images/iitb_logo.png" id="iitb-logo"
+                                    alt="IIT Bombay Logo"></a>
                         </div>
                     </div>
                 </div>
@@ -133,38 +137,11 @@
         </div>
     </section>
 
-    <section class="ftco-section ftco-partner ftco-1-pt ">
-        <div class="container">
-            <div class="row justify-content-shift">
-                <div class="ftco-animate">
-                    <a href="https://www.honda.co.jp/robotics/" class="partner helper"> <span class="helper"></span><img
-                            src="images/honda-logo.webp" width="150px" alt="Honda RnD Logo"></a>
-                </div>
-                <div class="ftco-animate">
-                    <a href="https://www.iitb.ac.in/" class="partner helper"> <span class="helper"></span><img
-                            src="images/iitb_logo.png" width="80px" alt="IIT Bombay Logo"></a>
-                </div>
-                <!-- <div class="col-sm ftco-animate">
-                    <a href="#" class="partner"><img src="images/partner-3.png" class="img-fluid"
-                            alt="Colorlib Template"></a>
-                </div>
-                <div class="col-sm ftco-animate">
-                    <a href="#" class="partner"><img src="images/partner-4.png" class="img-fluid"
-                            alt="Colorlib Template"></a>
-                </div>
-                <div class="col-sm ftco-animate">
-                    <a href="#" class="partner"><img src="images/partner-5.png" class="img-fluid"
-                            alt="Colorlib Template"></a>
-                </div> -->
-            </div>
-        </div>
-    </section>
 
-
-    <section class="ftco-section ftco-no-pt ftco-no-pb" id="resume-section">
+    <section class="ftco-section ftco-no-pb pt-5" id="resume-section">
         <div class="container">
             <div class="row">
-                <div class="col-md-3" id="my-content">
+                <div class="col-md-3" id="only-big-screen">
                     <nav id="navi">
                         <ul>
                             <li><a href="#page-0">Experience</a></li>
@@ -176,7 +153,7 @@
 
 
                 <div class="col-md-9">
-                    <div id="page-0" class="page one">
+                    <div id="page-0" class="page">
                         <h2 class="heading">Experience</h2>
                         <div class="resume-wrap d-flex ftco-animate">
                             <!-- <div class="icon d-flex align-items-center justify-content-center">
@@ -241,7 +218,7 @@
 
 
 
-                        <div id="page-1" class="page two">
+                        <div id="page-1" class="page">
                             <h2 class="heading">Education</h2>
                             <div class="resume-wrap d-flex ftco-animate">
                                 <!-- <div class="icon d-flex align-items-center justify-content-center">
@@ -253,21 +230,18 @@
                                     <span class="position">Indian Institute of technology Bombay</span>
                                     <p>Department Rank 5 out of 102 batchmates with GPA 9.26/10.00 <br></p>
                                     <ul>
-                                        <li>Awarded minor degree in <a class="bold_blk_txt">Computer Science
+                                        <li>Minor degree in <a class="bold_blk_txt">Computer Science
                                                 Engineering</a></li>
-                                        <li>Awarded minor degree in <a class="bold_blk_txt">Artificial Intelligence &
+                                        <li>Minor degree in <a class="bold_blk_txt">Artificial Intelligence &
                                                 Data Science</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
 
-                        <div id="page-2" class="page three">
+                        <div id="page-2" class="page">
                             <h2 class="heading"> Key Projects </h2>
                             <div class="resume-wrap d-flex ftco-animate">
-                                <!-- <div class="icon d-flex align-items-center justify-content-center">
-                                    <span class="flaticon-ideas"></span>
-                                </div> -->
                                 <div class="text pl-3">
                                     <span class="date">Oct '21 - Present</span>
                                     <h2>Dextrous in-hand manipulation</h2>
@@ -276,10 +250,10 @@
                                     <img src="">
                                     <p>Using Deep Reinforcement Learning to train policy robust to changes in
                                         environment</p>
-                                    <p><a href="https://youtu.be/c-q-sr4ASFw" target="_blank"> video 1</a>,
-                                        <a href="https://youtu.be/AktHZjiEA5A" target="_blank"> video 2</a>,
+                                    <p><a href="https://youtu.be/c-q-sr4ASFw" target="_blank"> coin picking</a>,
+                                        <a href="https://youtu.be/AktHZjiEA5A" target="_blank"> can opening</a>,
                                         <a href="https://global.honda/innovation/advanced-technology/avatarrobot.html"
-                                            target="_blank"> reference article </a>
+                                            target="_blank"> press release </a>
                                     </p>
                                 </div>
 
@@ -290,178 +264,147 @@
                                     <span class="position">UMIC, IIT Bombay</span>
                                     <p>Part of a team of 30 students working on developing India's 1<sup>st</sup>
                                         self-driving car</p>
-                                    <p><a href="https://youtu.be/8lNKjX0-RKY" target="_blank"> demo video</a></p>
+                                    <p><a href="https://youtu.be/8lNKjX0-RKY" target="_blank"> showcase video</a></p>
                                 </div>
-
-
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
     </section>
 
-    <section class="ftco-section contact-section ftco-no-pt" id="contact-section">
-        <div class="container">
-            <div class="row justify-content-center mb-5 pb-3">
-                <div class="col-md-7 heading-section text-center ftco-animate">
-                    <h1 class="big big-2">Contact</h1>
-                    <h2 class="mb-4">Contact Me</h2>
-                    <p> Feel free to get in touch! </p>
-                </div>
+    <section class="ftco-section contact-section" id="contact-section">
+        <div class="row justify-content-center pb-3">
+            <div class="col-md-7 heading-section text-center ftco-animate">
+                <h1 class="big big-2">Contact</h1>
+                <h2 class="mb-4">Contact Me</h2>
+                <p> Feel free to get in touch! </p>
             </div>
+        </div>
 
-            <div class="row justify-content-center d-flex contact-info mb-5">
-                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                    <div class="align-self-stretch box text-center p-4 shadow">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="icon-github-alt"></span>
-                        </div>
-                        <div>
-                            <h3 class="mb-4">GitHub</h3>
-                            <p> <a href="https://github.com/pranav-deo">pranav-deo</a> </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                    <div class="align-self-stretch box text-center p-4 shadow">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="icon-phone2"></span>
-                        </div>
-                        <div>
-                            <h3 class="mb-4">Contact Number</h3>
-                            <p>(+91) 7875352249</p>
-                        </div>
-                    </div>
-                </div> -->
-                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                    <div class="align-self-stretch box text-center p-4 shadow">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="icon-envelope"></span>
-                        </div>
-                        <div>
-                            <h3 class="mb-4">Email Address</h3>
-                            <p> pranavdeo99 at gmail dot com </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                    <div class="align-self-stretch box text-center p-4 shadow">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="icon-linkedin"></span>
-                        </div>
-                        <div>
-                            <h3 class="mb-4">LinkedIn</h3>
-                            <p><a href="https://www.linkedin.com/in/pranavdeo99">pranavdeo99</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <footer class="ftco-footer ftco-section">
-                <div class="container">
-                    <div class="row mb-5">
-                        <div class="col-md">
-                            <div class="ftco-footer-widget mb-4">
-                                <h2 class="ftco-heading-2">About</h2>
-                                <p>Hey!</p>
-                                <p> I love cool technology and making new things work. My research interests primarily
-                                    lie in Robot Learning and Computer Vision.</p>
-                                <!--  <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul> -->
+        <div class="col-lg-9" style="margin: auto; padding-bottom: 2rem;">
+            <div class="row justify-content-around d-flex contact-info ftco-animate">
+                <div class="d-flex ftco-animate">
+                    <a href="https://github.com/pranav-deo" target="_blank">   
+                        <div class="box text-center">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="icon-github-alt"> </span>
+                            </div>
+                            <div>
+                                <h3 class="mb-4">GitHub</h3>
                             </div>
                         </div>
-                        <div class="col-md">
-                            <div class="ftco-footer-widget mb-4 ml-md-4">
-                                <h2 class="ftco-heading-2">Links</h2>
-                                <ul class="list-unstyled">
-                                    <li><a href="#home-section"><span class="icon-long-arrow-right mr-2"></span>Home</a>
-                                    </li>
-                                    <li><a href="#about-section"><span
-                                                class="icon-long-arrow-right mr-2"></span>About</a></li>
-                                    <li><a href="#resume-section"><span
-                                                class="icon-long-arrow-right mr-2"></span>Resume</a></li>
-                                    <!-- <li><a href="#Extra-Curricular-section"><span
-                                                class="icon-long-arrow-right mr-2"></span>Extra-Curricular</a></li> -->
-                                    <li><a href="#contact-section"><span
-                                                class="icon-long-arrow-right mr-2"></span>Contact</a></li>
-                                </ul>
+                    </a> 
+                </div>
+                <div class="d-flex ftco-animate" >
+                    <a href="mailto:pranavdeo99@gmail.com" target="_blank">   
+                        <div class="box text-center ">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="icon-envelope"></span>
+                            </div>
+                            <div>
+                                <h3 class="mb-4">Email</h3>
                             </div>
                         </div>
-                        <!-- <div class="col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Services</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Design</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Business Strategy</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Data Analysis</a></li>
-                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Graphic Design</a></li>
-              </ul>
-            </div>
-          </div> -->
-                        <div class="col-md">
-                            <div class="ftco-footer-widget mb-4">
-                                <h2 class="ftco-heading-2">Contact Info</h2>
-                                <p> Feel free to get in touch! </p>
-                                <div class="block-23 mb-3">
-                                    <ul>
-                                        <li><a href="https://github.com/pranav-deo"><span
-                                                    class="icon icon-github-alt"></span><span class="text">Github</span>
-                                        </li></a>
-                                        <li><a><span class="icon icon-envelope"></span><span class="text">pranavdeo99 at
-                                                    gmail dot com</span></a></li>
-                                        <li><a href="https://www.linkedin.com/in/pranavdeo99"><span
-                                                    class="icon icon-linkedin"></span><span
-                                                    class="text">LinkedIn</span></a></li>
-                                    </ul>
-                                </div>
+                    </a>
+                </div>
+                <div class="d-flex ftco-animate" >
+                    <a href="https://www.linkedin.com/in/pranavdeo99" target="_blank">   
+                        <div class="box text-center">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="icon-linkedin"></span>
                             </div>
+                            <div>
+                                <h3 class="mb-4">LinkedIn</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="ftco-footer ftco-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="ftco-footer-widget mb-4" id="only-big-screen">
+                            <h2 class="ftco-heading-2">About</h2>
+                            <p> I love cool technology and making new things work. My research interests primarily
+                                lie in Robot Learning and Computer Vision.</p>
+                                <!-- <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                            </ul> -->
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12 text-center">
+                    <div class="col-md">
+                        <div class="ftco-footer-widget mb-4 ml-md-4">
+                            <h2 class="ftco-heading-2">Links</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="#home-section"><span class="icon-long-arrow-right mr-2"></span>Home</a>
+                                </li>
+                                <li><a href="#about-section"><span
+                                            class="icon-long-arrow-right mr-2"></span>About</a></li>
+                                <li><a href="#resume-section"><span
+                                            class="icon-long-arrow-right mr-2"></span>Resume</a></li>
+                                <!-- <li><a href="#Extra-Curricular-section"><span
+                                            class="icon-long-arrow-right mr-2"></span>Extra-Curricular</a></li> -->
+                                <li><a href="#contact-section"><span
+                                            class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
 
-                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                Copyright &copy;
-                                <script>document.write(new Date().getFullYear());</script> All rights reserved | This
-                                template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a
-                                    href="https://colorlib.com" target="_blank">Colorlib</a>
-                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            </p>
+                    <div class="col-md">
+                        <div class="ftco-footer-widget mb-4">
+                            <h2 class="ftco-heading-2">Contact Info</h2>
+                            <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-2" id="small-screen-start">
+                                <li class="ftco-animate"><a href="https://github.com/pranav-deo"><span class="icon-github"></span></a></li>
+                                <li class="ftco-animate"><a href="mailto:pranavdeo99@gmail.com"><span class="icon-envelope"></span></a></li>
+                                <li class="ftco-animate"><a href="https://www.linkedin.com/in/pranavdeo99"><span class="icon-linkedin"></span></a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </footer>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+
+                        <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | Based on a template by <a href="https://colorlib.com"
+                                target="_blank">Colorlib</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
 
 
+        <!-- loader -->
+        <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+                <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+                <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                    stroke="#F96D00" />
+            </svg></div>
 
-            <!-- loader -->
-            <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-                    <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-                    <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-                        stroke="#F96D00" />
-                </svg></div>
 
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery-migrate-3.0.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/jquery.stellar.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="js/jquery.animateNumber.min.js"></script>
+        <script src="js/scrollax.min.js"></script>
 
-            <script src="js/jquery.min.js"></script>
-            <script src="js/jquery-migrate-3.0.1.min.js"></script>
-            <script src="js/popper.min.js"></script>
-            <script src="js/bootstrap.min.js"></script>
-            <script src="js/jquery.easing.1.3.js"></script>
-            <script src="js/jquery.waypoints.min.js"></script>
-            <script src="js/jquery.stellar.min.js"></script>
-            <script src="js/owl.carousel.min.js"></script>
-            <script src="js/jquery.magnific-popup.min.js"></script>
-            <script src="js/aos.js"></script>
-            <script src="js/jquery.animateNumber.min.js"></script>
-            <script src="js/scrollax.min.js"></script>
-
-            <script src="js/main.js"></script>
+        <script src="js/main.js"></script>
 
 </body>
 
